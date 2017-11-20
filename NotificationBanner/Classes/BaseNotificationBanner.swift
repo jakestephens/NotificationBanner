@@ -352,6 +352,7 @@ public class BaseNotificationBanner: UIView {
         Changes the frame of the notificaiton banner when the orientation of the device changes
     */
     private dynamic func onOrientationChanged() {
+        updateSpacerViewHeight()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             // swizzle from UIDeviceOrientation to UIInterfaceOrientationMask
             var orientation: UIInterfaceOrientationMask?
