@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2345BAC81FC337A6004AA79A /* NotificationBannerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345BAC71FC337A6004AA79A /* NotificationBannerUtilities.swift */; };
 		823255AF1EB87313006F95C3 /* BannerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232559F1EB87313006F95C3 /* BannerColors.swift */; };
 		823255B01EB87313006F95C3 /* BannerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823255A01EB87313006F95C3 /* BannerStyle.swift */; };
 		823255B11EB87313006F95C3 /* BaseNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823255A11EB87313006F95C3 /* BaseNotificationBanner.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2345BAC71FC337A6004AA79A /* NotificationBannerUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBannerUtilities.swift; sourceTree = "<group>"; };
 		8232558B1EB872AB006F95C3 /* NotificationBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8232559E1EB87313006F95C3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8232559F1EB87313006F95C3 /* BannerColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerColors.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				823255A21EB87313006F95C3 /* NotificationBanner.swift */,
 				823255A31EB87313006F95C3 /* NotificationBannerQueue.swift */,
 				823255A41EB87313006F95C3 /* StatusBarNotificationBanner.swift */,
+				2345BAC71FC337A6004AA79A /* NotificationBannerUtilities.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				A999043F1EEF64F0006DA132 /* BannerHapticGenerator.swift in Sources */,
 				823255B01EB87313006F95C3 /* BannerStyle.swift in Sources */,
 				823255B11EB87313006F95C3 /* BaseNotificationBanner.swift in Sources */,
+				2345BAC81FC337A6004AA79A /* NotificationBannerUtilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

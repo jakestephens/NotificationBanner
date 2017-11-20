@@ -17,6 +17,7 @@
  */
 
 import UIKit
+import SnapKit
 
 #if CARTHAGE_CONFIG
     import MarqueeLabelSwift
@@ -37,7 +38,11 @@ public class BaseNotificationBanner: UIView {
     public weak var delegate: NotificationBannerDelegate?
     
     /// The height of the banner when it is presented
-    public var bannerHeight: CGFloat = 64.0
+    public var bannerHeight: CGFloat {
+        return NotificationBannerUtilities.isiPhoneX()
+            && UIApplication.shared.statusBarOrientation.isPortrait
+            && parentViewController == nil ? 88.0 : 64.0
+    }
     
     /// The topmost label of the notification if a custom view is not desired
     public internal(set) var titleLabel: MarqueeLabel?
@@ -179,7 +184,7 @@ public class BaseNotificationBanner: UIView {
             }
             make.left.equalToSuperview()
             make.right.equalToSuperview()
-            make.height.equalTo(10)
+            updateSpacerViewHeight(make: make)
         }
         
         contentView.snp.remakeConstraints { (make) in
@@ -192,6 +197,22 @@ public class BaseNotificationBanner: UIView {
             }
             make.left.equalToSuperview()
             make.right.equalToSuperview()
+        }
+    }
+    
+    /**
+        Updates the spacer view height. Specifically used for orientation changes.
+     */
+    private func updateSpacerViewHeight(make: ConstraintMaker? = nil) {
+        let finalHeight = NotificationBannerUtilities.isiPhoneX()
+            && UIApplication.shared.statusBarOrientation.isPortrait
+            && parentViewController == nil ? 40.0 : 10.0
+        if let make = make {
+            make.height.equalTo(finalHeight)
+        } else {
+            spacerView.snp.updateConstraints({ (make) in
+                make.height.equalTo(finalHeight)
+            })
         }
     }
     
