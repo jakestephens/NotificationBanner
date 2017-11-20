@@ -118,14 +118,6 @@ public class BaseNotificationBanner: UIView {
     /// The main window of the application which banner views are placed on
     private let appWindow: UIWindow = UIApplication.shared.delegate!.window!!
     
-    /// The position the notification banner should slide in from
-    private(set) var bannerPosition: BannerPosition!
-    /// A view that helps the spring animation look nice when the banner appears
-    private var spacerView: UIView!
-    
-    /// The view controller to display the banner on. This is useful if you are wanting to display a banner underneath a navigation bar
-    private weak var parentViewController: UIViewController?
-    
     /// The position the notification banner should slide in from (default is .top)
     /// - note: This is a read only property - either use the `show()` method, or create/assign the `bannerPositionFrame`
     public var bannerPosition: BannerPosition! {
@@ -255,7 +247,6 @@ public class BaseNotificationBanner: UIView {
         Dismisses the NotificationBanner and shows the next one if there is one to show on the queue
     */
     @objc public func dismiss() {
-    public func dismiss() {
         guard let bannerPositionFrame = bannerPositionFrame
             else { return }
         
