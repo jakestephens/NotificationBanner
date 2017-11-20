@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0D9ADF1F15D19D003B35A8 /* BannerPositionFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D9ADE1F15D19D003B35A8 /* BannerPositionFrame.swift */; };
 		823255AF1EB87313006F95C3 /* BannerColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8232559F1EB87313006F95C3 /* BannerColors.swift */; };
 		823255B01EB87313006F95C3 /* BannerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823255A01EB87313006F95C3 /* BannerStyle.swift */; };
 		823255B11EB87313006F95C3 /* BaseNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823255A11EB87313006F95C3 /* BaseNotificationBanner.swift */; };
@@ -15,12 +16,14 @@
 		823255B41EB87313006F95C3 /* StatusBarNotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823255A41EB87313006F95C3 /* StatusBarNotificationBanner.swift */; };
 		823255B61EB87313006F95C3 /* NotificationBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 823255A71EB87313006F95C3 /* NotificationBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		823255B91EB8736D006F95C3 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 823255B81EB8736D006F95C3 /* Cartfile */; };
+		951D609D1F71BF82008E4BCC /* NotificationBannerUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D609C1F71BF82008E4BCC /* NotificationBannerUtilities.swift */; };
 		A999043F1EEF64F0006DA132 /* BannerHapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A999043E1EEF64F0006DA132 /* BannerHapticGenerator.swift */; };
 		EA9A178A1EC75DE000CF2261 /* MarqueeLabelSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9A17891EC75DE000CF2261 /* MarqueeLabelSwift.framework */; };
 		EA9A178C1EC75DE400CF2261 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA9A178B1EC75DE400CF2261 /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0D9ADE1F15D19D003B35A8 /* BannerPositionFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerPositionFrame.swift; sourceTree = "<group>"; };
 		8232558B1EB872AB006F95C3 /* NotificationBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8232559E1EB87313006F95C3 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		8232559F1EB87313006F95C3 /* BannerColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerColors.swift; sourceTree = "<group>"; };
@@ -33,6 +36,7 @@
 		823255A71EB87313006F95C3 /* NotificationBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationBanner.h; sourceTree = "<group>"; };
 		823255B81EB8736D006F95C3 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		823255BB1EB87CB7006F95C3 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		951D609C1F71BF82008E4BCC /* NotificationBannerUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBannerUtilities.swift; sourceTree = "<group>"; };
 		A999043E1EEF64F0006DA132 /* BannerHapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerHapticGenerator.swift; sourceTree = "<group>"; };
 		EA9A17891EC75DE000CF2261 /* MarqueeLabelSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarqueeLabelSwift.framework; path = Carthage/Build/iOS/MarqueeLabelSwift.framework; sourceTree = "<group>"; };
 		EA9A178B1EC75DE400CF2261 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 		8232559D1EB87313006F95C3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0D0D9ADE1F15D19D003B35A8 /* BannerPositionFrame.swift */,
 				8232559E1EB87313006F95C3 /* .gitkeep */,
 				8232559F1EB87313006F95C3 /* BannerColors.swift */,
 				A999043E1EEF64F0006DA132 /* BannerHapticGenerator.swift */,
@@ -88,6 +93,7 @@
 				823255A11EB87313006F95C3 /* BaseNotificationBanner.swift */,
 				823255A21EB87313006F95C3 /* NotificationBanner.swift */,
 				823255A31EB87313006F95C3 /* NotificationBannerQueue.swift */,
+				951D609C1F71BF82008E4BCC /* NotificationBannerUtilities.swift */,
 				823255A41EB87313006F95C3 /* StatusBarNotificationBanner.swift */,
 			);
 			path = Classes;
@@ -202,7 +208,9 @@
 			files = (
 				823255B41EB87313006F95C3 /* StatusBarNotificationBanner.swift in Sources */,
 				823255B21EB87313006F95C3 /* NotificationBanner.swift in Sources */,
+				0D0D9ADF1F15D19D003B35A8 /* BannerPositionFrame.swift in Sources */,
 				823255AF1EB87313006F95C3 /* BannerColors.swift in Sources */,
+				951D609D1F71BF82008E4BCC /* NotificationBannerUtilities.swift in Sources */,
 				823255B31EB87313006F95C3 /* NotificationBannerQueue.swift in Sources */,
 				A999043F1EEF64F0006DA132 /* BannerHapticGenerator.swift in Sources */,
 				823255B01EB87313006F95C3 /* BannerStyle.swift in Sources */,
@@ -328,13 +336,13 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/NotificationBanner/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DCARTHAGE_CONFIG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dh.NotificationBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -352,13 +360,13 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/NotificationBanner/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DCARTHAGE_CONFIG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dh.NotificationBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

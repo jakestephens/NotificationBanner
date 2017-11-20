@@ -221,7 +221,7 @@ extension ExampleViewController: ExampleViewDelegate {
             // Status Bar Success Notification
             let banner = StatusBarNotificationBanner(title: "Success Status Bar Notification", style: .success)
             banner.delegate = self
-            banner.show(queuePosition: selectedQueuePosition(), bannerPosition: .bottom)
+            banner.show(queuePosition: selectedQueuePosition(), bannerPosition: selectedBannerPosition())
         case 1:
             // Status Bar Danger Notification
             let banner = StatusBarNotificationBanner(title: "Danger Status Bar Notification", style: .danger)
@@ -251,16 +251,16 @@ extension ExampleViewController: ExampleViewDelegate {
             // Status Bar Attributed Title Notification
             let title = "Custom Status Bar Notification"
             let attributedTitle = NSMutableAttributedString(string: title)
-            attributedTitle.addAttribute(NSForegroundColorAttributeName,
+            attributedTitle.addAttribute(NSAttributedStringKey.foregroundColor,
                                          value: UIColor.red,
                                          range: (title as NSString).range(of: "Custom"))
-            attributedTitle.addAttribute(NSForegroundColorAttributeName,
+            attributedTitle.addAttribute(NSAttributedStringKey.foregroundColor,
                                          value: UIColor.cyan,
                                          range: (title as NSString).range(of: "Status"))
-            attributedTitle.addAttribute(NSForegroundColorAttributeName,
+            attributedTitle.addAttribute(NSAttributedStringKey.foregroundColor,
                                          value: UIColor.green,
                                          range: (title as NSString).range(of: "Bar"))
-            attributedTitle.addAttribute(NSForegroundColorAttributeName,
+            attributedTitle.addAttribute(NSAttributedStringKey.foregroundColor,
                                          value: UIColor.orange,
                                          range: (title as NSString).range(of: "Notification"))
             let banner = StatusBarNotificationBanner(attributedTitle: attributedTitle)
