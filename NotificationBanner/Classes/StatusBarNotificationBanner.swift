@@ -38,7 +38,6 @@ public class StatusBarNotificationBanner: BaseNotificationBanner {
     
     override init(style: BannerStyle, colors: BannerColorsProtocol? = nil) {
         super.init(style: style, colors: colors)
-        bannerHeight = 20.0
         
         titleLabel = MarqueeLabel()
         titleLabel?.animationDelay = 2
